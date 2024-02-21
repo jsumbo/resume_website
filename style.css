@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffcc00; /* Bright yellow for headings to stand out */
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+#navbarToggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+#navbar.active {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        display: none;
+    }
+    #navbar.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbarToggle {
+        display: block;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+}
